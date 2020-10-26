@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - CameraScript
     - PlayerScript
+    - hazardMove
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Tilemap.Editor.dll:
@@ -14,17 +15,18 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - TestRunner.Callbacks.WindowResultUpdaterDataHolder
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.CommandLineTest.RunData
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     - UnityEditor.TestTools.TestRunner.TestRunnerWindow
@@ -51,32 +53,42 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
     - Class: 62
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 592}
+      Script: {instanceID: 600}
     - Class: 114
-      Script: {instanceID: 11728}
+      Script: {instanceID: 11734}
     - Class: 114
-      Script: {instanceID: 12036}
+      Script: {instanceID: 12042}
     - Class: 114
-      Script: {instanceID: 12796}
+      Script: {instanceID: 12802}
     - Class: 114
-      Script: {instanceID: 13938}
+      Script: {instanceID: 12842}
     - Class: 114
-      Script: {instanceID: 14386}
+      Script: {instanceID: 13528}
     - Class: 114
-      Script: {instanceID: 15020}
+      Script: {instanceID: 13948}
     - Class: 114
-      Script: {instanceID: 22266}
+      Script: {instanceID: 14396}
     - Class: 114
-      Script: {instanceID: 23126}
+      Script: {instanceID: 15030}
+    - Class: 114
+      Script: {instanceID: 22498}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -322,6 +334,12 @@ ScriptsOnlyBuild:
     className: SpriteShape
   - hash:
       serializedVersion: 2
+      Hash: 8be9560b41a6271adf323db137b6d9cd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerScript
+  - hash:
+      serializedVersion: 2
       Hash: 5cc439bf63c0539d39588e69465ac2ab
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -374,6 +392,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: 66bca5cc6a18c5298ec75235e56a84d6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraScript
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -592,18 +616,12 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: ba8885765ad8fe055d2176fbae6efcd9
+      Hash: e08dc097b830ae769e9cdd9b04e903ac
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: PlayerScript
-  - hash:
-      serializedVersion: 2
-      Hash: 66bca5cc6a18c5298ec75235e56a84d6
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: CameraScript
+    className: hazardMove
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
   playerPath: D:/Programs/Misc/School/Unity/Unity projects/Tutorial 1.5 AA/Tutorial
-    2/Tut 2 Build/Tutorial 2.exe
+    2/Challenge 2 Build/Tutorial 2.exe
